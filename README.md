@@ -1,82 +1,109 @@
-# 🧮 MathTrainer - iOS приложение для тренировки математики
+# 🧮 MathTrainer - iOS Math Training App (MVVM/SwiftUI)
 <div align="center">
 <img width = "250" src="https://github.com/user-attachments/assets/057b0029-8cd9-4afd-8159-6d39739a0d65" />
 <img width = "250" src="https://github.com/user-attachments/assets/21d0b706-843a-493c-a3d0-d471c5dedc8a" />
 <img width = "250" src="https://github.com/user-attachments/assets/36d28d21-b762-43b1-9f54-6e272f053896" />
 </div>
 
-## 📱 О приложении
-MathTrainer - это интерактивное iOS-приложение для тренировки математических навыков. Приложение предлагает бесконечную генерацию примеров с тремя уровнями сложности и мгновенной обратной связью. Идеально подходит для школьников, студентов и всех, кто хочет поддерживать мозг в тонусе.
+## 📱 About the App
+MathTrainer is an interactive iOS application designed for practicing mathematical skills. The app offers infinite problem generation with three difficulty levels and instant feedback. Perfect for school students, university attendees, and anyone looking to keep their mind sharp.
 
 
-## ✨ Особенности
-### 🎯 Три уровня сложности
-- Низкий: Числа 1-10, сложение и вычитание
+## ✨ Features
+### 🎯 Three Difficulty Levels
+- Easy: Numbers 1-10, addition and subtraction
 
-- Средний: Числа 1-20, +, -, ×
+- Medium: Numbers 1-20, +, -, ×
 
-- Высокий: Числа 1-50, все операции (+, -, ×, ÷)
+- Hard: Numbers 1-50, all operations (+, -, ×, ÷)
 
-### 🎮 Интерактивный геймплей
-- Интуитивный интерфейс с поддержкой темной темы
+### 🎮 Interactive Gameplay
+- Intuitive interface with dark mode support
 
-- Мгновенная обратная связь с цветовой индикацией
+- Instant feedback with color indicators
 
-- Визуальные анимации при правильных/неправильных ответах
+- Visual animations for correct/incorrect answers
 
-- Автоматическая генерация новых примеров
+- Automatic generation of new problems
 
-### 📊 Умная система примеров
-- Гарантированно корректные математические примеры
+### 📊 Smart Problem System
+- Guaranteed mathematically correct problems
 
-- Интеллектуальный подбор чисел для деления (только целые результаты)
+- Intelligent number selection for division (only integer results)
 
-- Автоматическая корректировка вычитания (неотрицательные ответы)
+- Automatic subtraction adjustment (non-negative answers)
 
-- Разнообразные операции в зависимости от уровня сложности
+- Diverse operations based on difficulty level
 
-## 🏗️ Архитектура
-Приложение построено на чистой архитектуре MVVM с использованием современных практик SwiftUI:
+## 🏗️ Architecture
+The app is built on clean MVVM architecture using modern SwiftUI practices:
 
 ```
 MathTrainer/
-├── MathTrainerApp.swift          # Точка входа
+├── MathTrainerApp.swift           # App entry point
 ├── Models/
-│   ├── Difficulty.swift          # Модель уровня сложности
-│   ├── MathOperation.swift       # Математические операции
-│   └── MathProblem.swift         # Математический пример
+│   ├── Difficulty.swift           # Difficulty level model
+│   ├── MathOperation.swift        # Mathematical operations
+│   └── MathProblem.swift          # Math problem model
 ├── ViewModels/
-│   ├── GameViewModel.swift       # Логика игры
-│   └── MathProblemGenerator.swift # Генератор примеров
+│   ├── GameViewModel.swift        # Game logic
+│   └── MathProblemGenerator.swift # Problem generator
 └── Views/
-    ├── ContentView.swift         # Главный координатор
-    ├── DifficultyView.swift      # Экран выбора уровня
-    ├── GameView.swift           # Игровой экран
-    ├── ProblemView.swift        # Отображение примера
-    └── InputField.swift         # Поле ввода с анимациями
+    ├── ContentView.swift          # Main coordinator
+    ├── DifficultyView.swift       # Difficulty selection screen
+    ├── GameView.swift             # Game screen
+    ├── ProblemView.swift          # Problem display
+    └── InputField.swift           # Animated input field
 ```
 
-## 🔧 Ключевые технологии
-- SwiftUI с declarative syntax
+## 🔧 Key Technologies
+- SwiftUI with declarative syntax
 
-- Combine для реактивного программирования
+- Combine for reactive programming
 
-- NavigationStack для современной навигации
+- NavigationStack for modern navigation
 
-- Custom animations с GeometryEffect
+- Custom animations with GeometryEffect
 
-- Asset Catalogs для поддержки темной темы
+- Asset Catalogs for dark mode support
 
-### 🎨 Плавные анимации
-- Тряска InputField при неправильном ответе
+## 🎨 Smooth Animations
+- InputField shake animation for incorrect answers
 
-- Плавное появление/исчезание крестика очистки
+- Smooth fade-in/out for clear button
 
-- Цветовые переходы рамки поля ввода
+- Color transitions for input field border
 
-### 🎯 Пользовательский опыт
-- Адаптивный дизайн для всех размеров iPhone
+## 🎯 User Experience
+- Responsive design for all iPhone sizes
 
-- Поддержка темной темы с кастомными цветами
+- Dark mode support with custom colors
 
-- Интуитивная навигация с NavigationStack
+- Intuitive navigation with NavigationStack
+
+## 📦 Installation & Setup
+- Clone the repository
+
+- Open MathTrainer.xcodeproj in Xcode 15+
+
+- Build and run on iOS 17.0+ simulator or device
+
+- No external dependencies required
+
+## 🚀 How to Use
+- Launch the app
+
+- Select your preferred difficulty level
+
+- Solve the presented math problems
+
+- Receive instant feedback on your answers
+
+- Continue practicing with infinite problems
+
+- Switch difficulty levels anytime
+
+## 📝 Requirements
+- iOS: 17.0+
+- Xcode: 15.0+
+- Swift: 5.9+
